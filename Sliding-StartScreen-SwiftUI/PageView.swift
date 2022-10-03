@@ -22,10 +22,10 @@ struct PageView: View {
                 .padding()
             
             Text(page.name)
-                .font(.title)
-            
+                .font(.title2)
+
             Text(page.description)
-                .font(.subheadline)
+                .font(.system(size: 12))
                 .frame(width: 300)
         }
     }

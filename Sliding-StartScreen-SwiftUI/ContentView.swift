@@ -8,9 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var pageIndex = 0
+    private let pages: [Page] = Page.samplePages
+    private let dotAppearance = UIPageControl.appearance()
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection: $pageIndex) {
+            ForEach(pages) { page in
+                VStack {
+                    Spacer()
+                    PageView(page: page)
+                    Spacer()
+                    if page == pages.last {
+                        Button("Sign me up!", action: goToFirstPage)
+                            .buttonStyle(.bordered)
+                    } else {
+                        Button("Next", action: nextPage)
+                    }
+                }
+                .tag(page.tag)
+            }
+        }
+    }
+    
+    func nextPage() {
+        pageIndex += 1
+    }
+    
+    func goToFirstPage() {
+        pageIndex = 0
     }
 }
 
