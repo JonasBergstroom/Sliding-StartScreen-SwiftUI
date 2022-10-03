@@ -12,6 +12,7 @@
 		2E288B1628E9BF9C00357553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E288B1528E9BF9C00357553 /* Assets.xcassets */; };
 		2E288B1928E9BF9C00357553 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E288B1828E9BF9C00357553 /* Preview Assets.xcassets */; };
 		2EE707DE28EB3AD4001519F2 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE707DD28EB3AD4001519F2 /* PageModel.swift */; };
+		2EE707E028EB425F001519F2 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE707DF28EB425F001519F2 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2E288B1528E9BF9C00357553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E288B1828E9BF9C00357553 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2EE707DD28EB3AD4001519F2 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		2EE707DF28EB425F001519F2 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 				2E288B1128E9BF9A00357553 /* Sliding_StartScreen_SwiftUIApp.swift */,
 				2E288B1328E9BF9A00357553 /* ContentView.swift */,
 				2E288B1528E9BF9C00357553 /* Assets.xcassets */,
-				2E288B1728E9BF9C00357553 /* Preview Content */,
 				2EE707DD28EB3AD4001519F2 /* PageModel.swift */,
+				2EE707DF28EB425F001519F2 /* PageView.swift */,
+				2E288B1728E9BF9C00357553 /* Preview Content */,
 			);
 			path = "Sliding-StartScreen-SwiftUI";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E288B1428E9BF9A00357553 /* ContentView.swift in Sources */,
+				2EE707E028EB425F001519F2 /* PageView.swift in Sources */,
 				2EE707DE28EB3AD4001519F2 /* PageModel.swift in Sources */,
 				2E288B1228E9BF9A00357553 /* Sliding_StartScreen_SwiftUIApp.swift in Sources */,
 			);

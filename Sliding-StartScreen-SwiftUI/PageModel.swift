@@ -14,7 +14,7 @@ struct Page: Identifiable {
     var imageUrl: String
     var tag: Int
     
-    static var samplePage = Page(name: "Title", description: "Sample description", imageUrl: "delivery", tag: 0)
+    static var samplePage = Page(name: "Title", description: "Sample description", imageUrl: "Picture1", tag: 0)
     
     static var samplePages: [Page] = [
     Page(name: "Welcome to this Moving Assistance App!", description: "The best app to get your stuff moving", imageUrl: "Picture1", tag: 0),
