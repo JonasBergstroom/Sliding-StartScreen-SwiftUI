@@ -23,12 +23,22 @@ struct ContentView: View {
                     if page == pages.last {
                         Button("Sign me up!", action: goToFirstPage)
                             .buttonStyle(.bordered)
+                            .foregroundColor(.red.opacity(0.70))
                     } else {
                         Button("Next", action: nextPage)
+                            .foregroundColor(.red.opacity(0.70))
                     }
+                    Spacer()
                 }
                 .tag(page.tag)
             }
+        }
+        .animation(.easeInOut, value: pageIndex)
+        .tabViewStyle(.page)
+        .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+        .onAppear {
+            dotAppearance.currentPageIndicatorTintColor = .black
+            dotAppearance.pageIndicatorTintColor = .gray
         }
     }
     
